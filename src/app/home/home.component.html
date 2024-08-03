@@ -1,0 +1,31 @@
+<div>
+    <div class="grid grid-cols-8 gap-3 h-full w-full">
+        <div class="col-span-3 pl-7 pt-8">
+            <span class="text-3xl"> {{ item() }} </span>
+            <div class="divider"></div>
+        </div>
+        <div class="col-span-5">
+            <app-header (onItemSelected)="itemSelected($event)"></app-header>
+        </div>
+    </div>
+
+    <div class="h-full w-full p-7">
+        @switch (item()) {
+            @case ('About Me'){
+                <app-about></app-about>
+            }
+            @case ('Resume'){
+                <app-resume></app-resume>
+            }
+            @case ('Portfolio'){
+                <app-portfolio></app-portfolio>
+            }
+            @case ('Blog'){
+                <app-blog></app-blog>
+            }
+            @case ('Contact'){
+                <app-contact></app-contact>
+            }
+        }
+    </div>
+</div>

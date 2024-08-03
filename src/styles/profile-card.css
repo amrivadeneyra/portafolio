@@ -1,0 +1,11 @@
+.profile__card {
+    background-color: #1E1E1E;
+    border-radius: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    color: #fff;
+}
+

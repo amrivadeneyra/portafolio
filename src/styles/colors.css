@@ -1,0 +1,30 @@
+.bg-gray-dark {
+    background-color: #3e3e3e;
+}
+
+/* .bg-gray-dark {
+    background-color: #282828
+} */
+
+.bg-gray-darker {
+    background-color: #2B2B2B;
+}
+
+.bg-dark-gray {
+    background-color: #232323;
+}
+
+.text-light-blue {
+    --tw-text-opacity: 1 !important;
+    color: #00d9ffbe !important;
+}
+
+.text-gray-300 {
+    --tw-text-opacity: 1;
+    color: #cbd5e1 !important;
+}
+
+.text-content {
+    --tw-text-opacity: 1;
+    color: #bebebe !important;
+}

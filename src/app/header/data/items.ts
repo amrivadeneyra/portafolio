@@ -1,0 +1,1 @@
+export const Items = ['About', 'Resume', 'Portfolio', 'Blog', 'Contact'];

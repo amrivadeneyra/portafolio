@@ -1,0 +1,12 @@
+.header__selected {
+    color: #fff;
+    transition-duration: 700ms 
+}
+
+.header__selected:hover {
+    color: #78e6fa;
+}
+
+.header__selected:active {
+    color: #00d9ffd8;
+}
