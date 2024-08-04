@@ -1,7 +1,8 @@
 <div class="bg-gray-darker w-full h-15 rounded-bl-3xl rounded-tr-3xl">
-    <div class="grid grid-cols-5 gap-3 h-full place-items-center cursor-pointer" >
+    <div class="grid grid-cols-5 gap-3 h-full place-items-center cursor-pointer">
         @for(item of items; track $index){
-            <span class="header__selected" (click)="onItemSelected.emit(item)">
+            <span class="header__selected" [ngClass]="{'text-light-blue': selectedItem()===item}"
+                (click)="selectItem(item)">
                 {{ item }}
             </span>
         }

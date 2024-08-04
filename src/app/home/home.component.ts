@@ -14,7 +14,8 @@ import { ContactComponent } from "./contact/contact.component";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  item = signal<string>('About Me');
+  //item = signal<string>('About Me');
+  item = signal<string>('Resume');
 
   itemSelected(item: string): void {
     if (item === 'About') {

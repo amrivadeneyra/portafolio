@@ -1,3 +1,6 @@
+.bg-dark {
+    background-color: #111;
+}
 .bg-gray-dark {
     background-color: #3e3e3e;
 }
@@ -12,6 +15,10 @@
 
 .bg-dark-gray {
     background-color: #232323;
+}
+
+.bg-light-blue {
+    background-color: #00d9ffbe;
 }
 
 .text-light-blue {

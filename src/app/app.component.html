@@ -1,14 +1,12 @@
 <!-- <router-outlet /> -->
-<div class="h-screen w-full">
-    <div class="h-full mx-12">
-        <div class="md:grid grid-cols-8 gap-7 h-full">
-            <div class="profile__card col-span-2 h-full p-7">
-                <app-profile-card></app-profile-card>
-            </div>
-
-            <div class="profile__card col-span-6 h-full">
-                <app-home></app-home>
-            </div>
+<div class="min-h-screen md:h-screen w-full md:overflow-hidden bg-dark ">
+    <div class="grid grid-cols-2 md:grid-cols-8 gap-7 mx-12  h-full">
+        <div class="profile__card col-span-2 p-7 my-4">
+            <app-profile-card></app-profile-card>
+        </div>
+        <div class="profile__card col-span-2 my-4 md:col-span-6">
+            <app-home></app-home>
         </div>
     </div>
+
 </div>

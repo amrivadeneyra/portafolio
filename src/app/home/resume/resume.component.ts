@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { resume } from './data/Resume';
+import { skills } from './data/Skill';
 
 @Component({
   selector: 'app-resume',
@@ -8,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
+
+  resume = resume
+
+  skills = skills
 
 }

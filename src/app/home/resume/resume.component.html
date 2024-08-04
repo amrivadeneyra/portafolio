@@ -1,1 +1,42 @@
-<p>resume works!</p>
+<div class="w-full">
+    @for(item of resume; track $index){
+        <div class="pb-9">
+            <div class="flex">
+                <div class="flex justify-center w-23 relative">
+                    <i class='bx bx-book-open text-2xl text-light-blue px-3 py-2 bg-dark-gray rounded-md'></i>
+                    <div class="absolute top-12 w-0.5 h-3/4 bg-gray-dark"></div> 
+                </div>
+                <div class="flex gap-5 items-center">
+                    <span class="text-2xl"> {{item.title}} </span>
+                </div>
+            </div>
+            @for(content of item.content; track $index){
+                <div class="flex">
+                    <div class="flex justify-center w-23 relative">
+                        <span class="h-3 w-3 bg-light-blue rounded-full absolute top-8.5 z-50"></span>
+                        @if(!content.stop){
+                        <div class="absolute top-8.5 w-0.5 h-full bg-gray-dark"></div> 
+                        }
+                    </div>
+                    <div class="grid items-center gap-2 pt-7 w-9/12">
+                        <span class="text-md">{{content.institution}}</span>
+                        <span class="text-light-blue">{{content.year}}</span>
+                        <span class="text-content">{{content.description}}</span>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    <div class="py-2">
+        <span class="text-2xl">My Skills</span>
+        <div class="flex flex-wrap bg-dark-gray py-7 my-8 rounded-2xl gap-7">
+            @for(skill of  skills; track $index){
+                <div class="mx-auto">
+                    <i class='flex justify-center {{skill.image}} text-5xl'></i>
+                    <span class="flex justify-center"> {{skill.name}} </span>
+                </div>
+            }
+        </div>
+    </div>
+</div>

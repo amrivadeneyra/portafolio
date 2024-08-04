@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, EventEmitter, Output, signal } from '@angular/core';
+import { Component, effect, EventEmitter, Output, signal } from '@angular/core';
 import { Items } from './data/items';
 
 @Component({
@@ -14,17 +14,15 @@ import { Items } from './data/items';
 export class HeaderComponent {
   @Output() onItemSelected: EventEmitter<string> = new EventEmitter<string>();
 
-  selectedItem = signal<string>('');
+  selectedItem = signal<string>('About');
 
   items = Items
+
+  constructor() { }
 
   selectItem(item: string): void {
     this.selectedItem.set(item);
     this.onItemSelected.emit(item);
-  }
-
-  isSelected(item: string): boolean {
-    return this.selectedItem() === item;
   }
 
 }

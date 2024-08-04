@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule
 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './profile-card.component.html',
   styleUrl: './profile-card.component.css'
 })
@@ -18,6 +19,7 @@ export class ProfileCardComponent {
     email: 'amanuelrivadeneyrai@gmail.com',
     phone: '+51 907960250',
     birthday: 'August 01, 2002',
+    address: 'Lima, Peru',
     avatar: '',
   };
 }

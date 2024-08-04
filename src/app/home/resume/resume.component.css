@@ -1,0 +1,8 @@
+.divider {
+    display: flex;
+    place-content: center !important;
+    margin: 5px 0;
+    height: 30px;
+    width: 5px;
+    border-radius: 24px;
+}
